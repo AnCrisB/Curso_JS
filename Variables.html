@@ -12,10 +12,44 @@
     <p>Es un contenedor de un valor</p>
     <!-- <script scr="Introduccion.js"></script> -->
     <script>
+
         var nombre;
         nombre = prompt('Ingresa tu nombre');
-        //alert(nombre);
-        //Esto nos manda una alerta en pantalla
+        edad = prompt('Ingresa la edad'); //19 + 1; (Se pueden hacer operaciones)
+    
+        
+        //A diferencia de una base de datos, una variable se pierde al actualizar la página
+        // MOSTRAR VARIABLE EN PANTALLA
+            alert(nombre +''+ edad); //concatenar nombre y edad
+            //Esto nos manda una alerta en pantalla
+            document.write(nombre);
+            //Esto nos muestra la varibale en la página
+            console.log(nombre);
+            //Esto nos muestra la variable en el inspector de elementos (consola)
+
+    //-----------------------------------------------------------------------------------------------
+    // TIPOS DE DATOS (Lo que podemos almacenar en una variable)
+        
+        // Numérico - float
+        var edad = 19.123;
+
+        // String - Cadena de Texto
+        var nombre = 'Carlos';
+        var apellido = 'Esparza';
+
+        document.write(nombre +''+ apellido);
+
+        // Object - Objeto
+        
+
+        // Boolean - Boleano
+
+        // Undefined
+
+        // Null
+
+        // NaN
+
     </script>
 </body>
 </html>
