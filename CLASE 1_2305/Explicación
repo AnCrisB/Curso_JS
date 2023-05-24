@@ -1,0 +1,96 @@
+Es un lenguaje debilmente tipeado (varias exigencias), convección forzada (convertir un valor numero a srting), se usa sobre browser(pagina web):
+Es un lenguaje interpretado que necesita dos entornos:
+- Navegador parte visual
+- Navegador parte consola
+
+Caracteristicas:
+Como se declaran?
+"let" "var" "const"
+Ej: let userName = 'Max';
+    userName = 'Manu';
+Las variables declaradas pueden cambiar de contenido
+Ej: const totalUsers = 15;
+totalUsers = 20; xxxxxxxxxxx
+
+- PERMITIDO
+  let userName -> Best Practice camelCase
+  let ageGroup5 -> Only letter and digits
+  let $kind0fSpecial -> Starting with $ is allowed
+  let _internalValue -> Starting with _ is allowed
+
+- TIPO DE DATOS
+    - Numbers
+    - Strings (text)
+    - Boleano
+    - Objecto
+    - Arrays
+
+- OPERATORS
+
+- CONDICIONALES LOGICOS
+  AND (*)
+  OR (+)
+  Ej: CondA AND CondB OR CondC (Se ejectua primero el AND a menos que se ponga un paréntesis)
+  Ej: name == 'Max' && age == 30 || is Admin
+
+- OPERADORES BOLEANOS
+=== compara igualdad estricta incluyendo el tipo de dato
+
+- LOOPS
+    for loop:
+      Ejectuta código a cierta cantidad de tiempos (con contador variable)
+      Ej: for (let i = 0; i < 3; i++)
+          {
+            console.log(i);
+          }
+          Para ir de uno en uno, para ir de dos es 
+          i = i + 2
+          i += 2
+
+    for-of loop:
+      Ejecuta for cada elemento in un arreglo
+      Ej: for (const el of array)
+          {
+            console.log(el);
+          }
+
+    for-in loop:
+      Ejecuta por cada llave en un objeto
+      Ej: for (const key in obj)
+          {
+        console.log(key); muestra la llave
+        console.log(obj[key]); muestra el valor de la llave
+          }
+    while loop:
+    
+
+
+Si queremos ver todos los elementos del array usamos "for"
+console-log(i); 
+console.log(el);
+console.log(key); muestra la llave
+console.log(obj[key]); muestra el valor de la llave
+
+Use constantes como sea posible para ser claro sobre tus intenciones
+- Variables
+- Tipos de datos (estos se manejan como objetos)
+
+Interacción con HTML
+
+EJEMPLOS:
+------------------------------------------------------------
+a = 12
+12
+console.log(a);
+-- Muestra 12 en la consola
+document.write(a);
+-- Muestra 12 en la página
+------------------------------------------------------------
+permiso=true
+true
+if (permiso) { alert ('Bienvenido');} else {alert('No tiene permiso');}
+-- Bienvenido--
+permiso=false
+false
+if (permiso) { alert ('Bienvenido');} else {alert('No tiene permiso');}
+-- No tiene permiso
