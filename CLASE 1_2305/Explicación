@@ -62,8 +62,13 @@ totalUsers = 20; xxxxxxxxxxx
         console.log(obj[key]); muestra el valor de la llave
           }
     while loop:
-    
 
+------------------    
+LET vs VAR vs CONST
+let (local) es reconocida solo donde esta encerrada en {}
+var (global) es reconocida por todo el programa
+const es una variable que no va a cambiar
+-----------------
 
 Si queremos ver todos los elementos del array usamos "for"
 console-log(i); 
