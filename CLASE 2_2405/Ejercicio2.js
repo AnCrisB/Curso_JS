@@ -101,7 +101,7 @@ cantidad = parseInt(prompt('Cuantos estudiante desea registrar'));
 
 for (let i = 1; i <= cantidad; i++){
     nombre = prompt('Ingrese el nombre');
-    sexo = prompt('Ingrese el sexo m/f').toLocaleLowerCase();
+    sexo = prompt('Ingrese el sexo m/f').toLowerCase(); //Convierte a texto
     nota = parseFloat(prompt('Ingrese la nota definitiva'));
     
     if (nota > notaMayor) {
@@ -126,10 +126,10 @@ document.write(nomMayor+' tiene la nota mas alta con'+notaMayor+nomMenor+ ' tien
 //---------------------------------------------------------------------------------------------------------------------------------
 //7. Programa que pida el ingreso del nombre y precio de un artículo y la cantidad que lleva el cliente. Mostrar lo que debe pagar el comprador en su factura.
 
-let nombre = prompt('Ingrese el nombre del producto');
+/* let nombre = prompt('Ingrese el nombre del producto');
 let cantidad = parseInt(prompt('Ingrese cantidad'), 10);
-let valor = parseInt(prompt('Ingrese valor'), 10);
-alert('El total de ${nombre} es ${cantidad} y el total a pagar es ${cantidad*valor}')
+let valor = parseInt(prompt('Ingrese valor'), 10); // Si no introduce un valor, toma 10 por defecto 
+alert(`El total de ${nombre} es ${cantidad} y el total a pagar es ${cantidad*valor}`) */
 
 //---------------------------------------------------------------------------------------------------------------------------------
 //8. Programa que Ingrese por teclado: a. el valor del lado de un cuadrado para mostrar por pantalla el perímetro del mismo b. la base y la altura de un rectángulo para mostrar el área del mismo.
@@ -139,8 +139,6 @@ alert('El total de ${nombre} es ${cantidad} y el total a pagar es ${cantidad*val
 //---------------------------------------------------------------------------------------------------------------------------------
 //9. N atletas han pasado a finales en salto triple en los juegos olímpicos femenino de 2022. Diseñe un programa que pida por teclado los nombres de cada atleta finalista y a su vez, sus marcas del salto en metros. Informar el nombre de la atleta campeona que se quede con la medalla de oro y si rompió récord, reportar el pago que será de 500 millones. El récord esta en 15,50 metros.
 
-//---------------------------------------------------------------------------------------------------------------------------------
-//10. Desarrolle un programa cíclico que capture un dato numérico cada vez, y los vaya acumulando. El programa se detiene cuando el usuario digita un cero. El programa debe mostrar: LA SUMATORIA DE LOS VALORES, EL VALOR DEL PROMEDIO, CUÁNTOS VALORES FUERON DIGITADOS, MAYOR VALOR Y MENOR VALOR.
 let num = parseFloat(prompt('Ingrese un número: '));
 let acum = 0;
 let listaNum = [];
@@ -148,9 +146,12 @@ let listaNum = [];
 while (num != 0){
     acum += num;
     listaNum.push(num);
-    num = parseFloat(prompt('Ingrese la marca del atleta: '));
+    num = parseFloat(prompt('Ingrese la marca del número: '));
 }
 
 let maximo = Math.max(...listaNum);
 let minimo = Math.min(...listaNum);
-alert('La suma de los valores ingresado es ${acum}, el promedio de los valores ingresados es ${acum/listaNum.length}, la cantidad de números ingresador fueron ${(listaNum.length+1)}, el número de mayor valor ingresado es ${maximo} y el minimo es ${minimo}');
+alert(`La suma de los valores ingresado es ${acum}, el promedio de los valores ingresados es ${acum/listaNum.length}, la cantidad de números ingresador fueron ${(listaNum.length+1)}, el número de mayor valor ingresado es ${maximo} y el minimo es ${minimo}`);
+
+//---------------------------------------------------------------------------------------------------------------------------------
+//10. Desarrolle un programa cíclico que capture un dato numérico cada vez, y los vaya acumulando. El programa se detiene cuando el usuario digita un cero. El programa debe mostrar: LA SUMATORIA DE LOS VALORES, EL VALOR DEL PROMEDIO, CUÁNTOS VALORES FUERON DIGITADOS, MAYOR VALOR Y MENOR VALOR.

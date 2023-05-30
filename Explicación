@@ -1,0 +1,205 @@
+Es un lenguaje debilmente tipeado (varias exigencias), convección forzada (convertir un valor numero a srting), se usa sobre browser(pagina web):
+Es un lenguaje interpretado que necesita dos entornos:
+- Navegador parte visual
+- Navegador parte consola
+
+Caracteristicas:
+Como se declaran?
+"let" "var" "const"
+Ej: let userName = 'Max';
+    userName = 'Manu';
+Las variables declaradas pueden cambiar de contenido
+Ej: const totalUsers = 15;
+totalUsers = 20; xxxxxxxxxxx
+
+- PERMITIDO
+  let userName -> Best Practice camelCase
+  let ageGroup5 -> Only letter and digits
+  let $kind0fSpecial -> Starting with $ is allowed
+  let _internalValue -> Starting with _ is allowed
+
+- TIPO DE DATOS
+    - Numbers
+    - Strings (text)
+    - Boleano
+    - Objecto
+    - Arrays
+
+- OPERATORS
+
+- CONDICIONALES LOGICOS
+  AND (*)
+  OR (+)
+  Ej: CondA AND CondB OR CondC (Se ejectua primero el AND a menos que se ponga un paréntesis)
+  Ej: name == 'Max' && age == 30 || is Admin
+
+- OPERADORES BOLEANOS
+=== compara igualdad estricta incluyendo el tipo de dato
+
+- LOOPS
+    for loop:
+      Ejectuta código a cierta cantidad de tiempos (con contador variable)
+      Ej: for (let i = 0; i < 3; i++)
+          {
+            console.log(i);
+          }
+          Para ir de uno en uno, para ir de dos es 
+          i = i + 2
+          i += 2
+
+    for-of loop:
+      Ejecuta for cada elemento in un arreglo
+      Ej: for (const el of array)
+          {
+            console.log(el);
+          }
+
+    for-in loop:
+      Ejecuta por cada llave en un objeto
+      Ej: for (const key in obj)
+          {
+        console.log(key); muestra la llave
+        console.log(obj[key]); muestra el valor de la llave
+          }
+    while loop:
+
+------------------    
+LET vs VAR vs CONST
+let (local) es reconocida solo donde esta encerrada en {} (Toma el alcance mas cercano; es decir, que si se repite dentro de una función, afecta pero tambien reconoce el global)
+var (global) es reconocida por todo el programa
+const es una variable que no va a cambiar
+-----------------
+
+Si queremos ver todos los elementos del array usamos "for"
+console-log(i); 
+console.log(el);
+console.log(key); muestra la llave
+console.log(obj[key]); muestra el valor de la llave
+
+Use constantes como sea posible para ser claro sobre tus intenciones
+- Variables
+- Tipos de datos (estos se manejan como objetos)
+
+Interacción con HTML
+
+EJEMPLOS:
+------------------------------------------------------------
+a = 12
+12
+console.log(a);
+-- Muestra 12 en la consola
+document.write(a);
+-- Muestra 12 en la página
+------------------------------------------------------------
+permiso=true
+true
+if (permiso) { alert ('Bienvenido');} else {alert('No tiene permiso');}
+-- Bienvenido--
+permiso=false
+false
+if (permiso) { alert ('Bienvenido');} else {alert('No tiene permiso');}
+-- No tiene permiso
+
+-------------------------------------------------------------------------------------------------------
+FUNCIONES EN JS
+A parte de servir para reutilizar codigo sirve para simplificar el codigo algoritmo (fraccionar) y puedo llamar en una sola linea.
+
+Como llamo al paquete de funciones?
+
+function mifuncion(parémtro1,parámetro2,..)
+  {"conjunto de linea de instrucciones
+    return(resultado);  (Toda funcion debe tener una instruccion que devuelve el llamado de la función, implica la terminacion de la funcion devolviendo un resultado)
+  }
+
+Ej: funcion que evalue sin un numero es par o no
+fuction evaluarpar (n)
+{
+  if (n%2 == 0)
+  { return (true) } (Aqui termina la función cumpla o no la condición)
+  else
+  { return (false) }
+}
+
+¡Los parametros de una funcion solo se ven afectados dentro de ella, no se llaman fuera de la función!
+
+Si tengo parámetro y envio un argumento sale mensaje (no definido)
+
+- Valores Predeterminados
+Ej:
+function showMessage(from, text = anotherFunction()) {
+
+  alert(from + ":" + text)
+  // anotherFunction() solo se ejecuta si text no fue asignado
+  // su resultado se convierte en el valor de texto
+}
+
+fuction anotherFuction(){return("Hola que tal?")}
+---Acá ya defini la funcion para que devuelva "Hola que tal?"
+
+Mostrar Mensaje('Ann'); //Ann: ¿Hola! (*)
+
+//funcion predefinida del lenguajE
+alert('Saludo')
+prompt('Cuál es tu nombre?', 'Pepe')
+
+alert(confirm('Acepta o cancela')) //Devuelve un valor tipo Booleano
+
+function shoMessage() {
+    let message = 'Hola ¡Soy JS!'
+    alert (message);
+}
+
+---------------------------------------------------------------------------------------------------------------------------------------
+Como es un lenguaje interpretado, primero se definen y declaran las funciones y luego se escribe el programa principal
+- FUNCIONES FLECHA
+Se llaman asi porque utilizan una flecha para indicar lo que se debe hacer en el proceso o función. Sirve para reducir lineas de codigo
+  Sintaxis: (si es un solo parámetro no necesito paréntesis)
+  Ej1:
+
+    var miFuncion = (par1, par2) o par1 + par2;(Asi como se acaba de escribir, reemplaza:
+    function miFuncion (par1, par2)
+    {
+      resultado = par1 + par2;
+      return (resultado);
+    })
+
+  //Función tradicional
+  fuction miFuncion (a){
+    return + 100;
+  }
+    - Cuando hay un solo parámetro, no es necesario encerrar entre paréntesis
+
+  //Función flecha
+  let mifuncion = a => a + 100; (dado a ejecute/devuelva a + 100, ese valor se va a almacenar en la variable "miFuncion")
+  resultado = mifuncion (12); (la variable almacena el valor de 112)
+
+  Ej2:
+  //Función tradicional
+  fuction miFuncion (a,b){
+    return a + b + 100;
+  }
+    - Cuando hay un solo parámetro, no es necesario encerrar entre paréntesis
+    
+  //Función flecha
+  let mifuncion = (a,b) => a + b + 100; (dado a ejecute/devuelva a + 100, ese valor se va a almacenar en la variable "miFuncion")
+  resultado = mifuncion (12.12); (la variable almacena el valor de 124)
+
+  Ej3:
+  // Función flecha con varias lineas
+  let miFuncion2 = a => {
+    let b = 1;
+    return (a + b) * 2;
+  }
+      A veces las funciones son mas elaboradas, si se necesita mas de una linea se escriben unas llave de apertura en cierre; pero, sin son mas de un parámetro necesito
+
+  let miFuncion3 = (a, b) => {
+        let c = 1;
+        return (a + c) * b;
+      }
+
+  Ej4:
+  // Mas o menos lo mismo que: let duplicar = function(n) {return n * 2}
+  // funtion duplicar (n) {return n*2}
+
+  let duplicar = n => n *2;
+  alert(duplicar(3)); //6
