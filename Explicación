@@ -203,3 +203,175 @@ Se llaman asi porque utilizan una flecha para indicar lo que se debe hacer en el
 
   let duplicar = n => n *2;
   alert(duplicar(3)); //6
+
+---------------------------------------------------------------
+MÉTODOS Y FUNCIONES APLICABLES A LOS OBJETOS TIPO 2ARRAY" EN JS
+---------------------------------------------------------------
+Push         Slice
+Pop          indexdf
+Concat       firEach
+Join         map
+
+// let 1 = [];
+const 1 = m.map(element => elemt.forEach.map (e => e))
+console.log(1);
+
+Ej1: 
+const arreglo = [1, 2, 3]; #array llamado arreglo
+array.push(4); #Agrega un elemento a la ultima posicion de un arreglo
+console.log(array) //[1, 2, 3, 4] (extension quokka.js)
+
+const lastElement = arreglo.pop(); #Saca el ultimo elemento del arreglo
+console.log(lastElement); //99
+console.log(arreglo); //[1, 2, 3]
+##No todos modifican el arreglo sobre el cual estan actudando.
+
+const array1 = [1, 2];
+const array2 = [3, 4];
+
+const newArray = array1.concat(array2);
+console.log(newArray); // 1, 2, 3, 4
+console.log(array1); // 1, 2
+console.log(array2); // 3, 4
+##Concat, devuelve otro vector y no modifica
+
+const miArray = [1, 2, 3];
+const joinedString = miArray.join('-'); //1-2-3
+console.logjoin
+  ## Convierte un vector en una cadena/string con todos sus elementos, separados pos un guión
+
+const array3 = [3, 9, 5, 4, 3];
+const sliceArray = array3.slice (1, 4); posicion 1 hasta la 4, sin tomar la 4 
+console.log(sliceArray); //[9, 5, 4]
+console.log(array3); //Muestra arreglo original
+  ## El metodo slice sobre un arreglo, hace que se obtenga un subarreglo, pero no lo modifica ni lo transforma
+
+const primerIndice = array3.IndexOf(3);
+console.log(Indice); //0
+  ## IndezOf obtine el indice donde se encuentra el valor 3 de izq a derecha
+
+const ultimoIndice = array3.lastIndexOf(3);
+console.log(Indice); //4
+  ## Toma el primero de derecha a izq
+
+const array4 = [1, 2, 3];
+array4.forEach (e => {
+  console.log(e); //0, 1, 2, 3, 99
+});
+console.log(array4); [0, 1, 2, 3, 99]
+
+const array4 = [0, 1, 2, 3, 9];
+array4.forEach (e => {
+  console.log(e**2); //0, 1, 4, 9, 81
+});
+console.log(array4); [0, 1, 2, 3, 99]
+ ## Recive como parametro como un funcion que indica lo que debe hacer "de array 4 para cada elemento e, muestrelo en consola no devuelve ningun valor, solo recorre el vector
+
+const array = [0, 1, 2, 3, 9];
+const mappeArray = array5.map(elem => elem *2);
+console.log(array5); [0, 1, 2, 3, 9]
+console.log(mappeArray); [0, 2, 4, 6, 12]
+toma cada elemento del arreglo implicado en el metodo lo devuelve y almacena en variable
+
+const array6 = [1, 2, 3, 4, 5, 9, 8, 7, 6, 5, 4];
+const arrayFiltrado = array6.filter(element => element > 2);
+console.log(arrayFiltrado);
+console.log(array6); 
+ ## Para c/elemento de array6 filtre todo aquello que sea mayor que 2. Para array6 (vector) filtre todos los elementos que cumplen la condicion, no modifica pero si devuelve un subarreglo a partir de la condición.
+
+console.log(array6, reverse());
+console.log(array6)
+ ## Invierte y afecta el arreglo
+
+ console.log(array.shift()); //4
+ console.log(array6); 
+ ## El metodo job quita el ultimo, y el shift quita el primero
+
+ cont array7 = array6(1, 2); indice 1 y toma 2 elementos a partir de ese indice
+ console.log(array6);
+ console.log(array7);
+ ## El metodo splice recorta el arreglo, se usa para agregar(TAREA)
+
+ delete(array6[1]); Pide elimine el elemento 1, es un valor indefinido, el espacio que ahí (la longitud del vector es la misma)
+ console.log(array6);
+
+ - Si pongo const, no puedo cambair el arreglo, pero si puedo cambiar el objeto del arreglo.
+
+ - ¿Como elimino un elemento de la mitad del arreglo? Con Slice
+
+const array8 = [1, 4, 40, 10, 8, 7, 90, 121];
+console.log(array8.sort()); 1,10, 121,4,40,7,8,90
+console.los(array8) 1,10,121,4,40,7,8,99
+https://www.todojs.com/usar-correctamente-el-metodo-sort/ explicacion de caso de error sort
+
+https://www.freecodecamp.org/espanol/news/javascript-splice-como-ulitizar-el-metodo-splice-de-arreglo-en-js/#:~:text=El%20m%C3%A9todo%20splice()%20es,eliminados%20como%20un%20nuevo%20arreglo Metodo splice
+
+const array8 = [1, 4, 40, 10, 8, 7, 90, 121];
+console.log(array8.sort((a,b) => a-b)); 1,10, 121,4,40,7,8,90
+console.los(array8) 1,10,121,4,40,7,8,99
+
+Ej.
+let ciudades = [ "Zaragoza", "madrid", "Barcelona", "Ávila"];
+console.log(ciudades.sort((a, b) => a.localCompare(b)));
+//
+
+-----------------------------------------------------------
+DESTRUCTURING O DESESTRUCTURACIÓN
+const elements = [5, 2];
+const [first, last] = elements;    // first = 5, last = 2
+  ·· En el primer caso, bastante obvio, extraemos el primer y segundo valor del array elements en una variable denominada first y otra llamada last.
+
+const elements = [5, 4, 3, 2];
+const [first, second] = elements;  // first = 5, second = 4, rest = discard
+  ·· hacemos lo mismo en las variables first y second, pero como el array tiene más elementos y sólo hemos indicado dos variables (first y second), el resto son descartadas.
+
+const elements = [5, 4, 3, 2];
+const [first, , third] = elements; // first = 5, third = 3, rest = discard
+  ·· pasa muy parecido, excepto que en el segundo parámetro de la parte izquierda, no colocamos ningún elemento, por lo tanto, ese dato se descartará.
+  
+
+const elements = [4];
+const [first, second] = elements;  // first = 4, second = undefined
+  ·· nos pasa al contrario, y hay menos elementos que variables, por lo que first toma el primer (y único) elemento y second se queda sin ningún valor (obtiene el valor undefined).
+
+## El truco en estos cuatro casos está en que en la parte derecha utilizamos los [] para indicar que se trata de un array, pero en la parte izquierda los utilizamos para indicar que hacemos una desestructuración.
+
+Ej de clase:
+
+let a, b, c, loQueQueda;
+//[a, b] = [10, 20];
+console.log(a); 10
+// Expected output: 10
+console.log(b); 20
+// Expected output: 20
+
+[a, b,...loQueQueda] = [10, 20, 30, 40, 50]; ... 
+console.log(a); 10
+console.log(b); 20
+console.log(c); undefined
+console.log(loQueQueda); [30,40,50]
+
+
+[a, b, c, ...loQueQueda] = [10, 20, 30, 40, 50]; ... 
+console.log(a); 10
+console.log(b); 20
+console.log(c); 30
+console.log(loQueQueda); [40,50]
+
+[a, b, c, ...loQueQueda] = [10, "Grupo R4", 30, 40, 50]; ... 
+console.log(a); 10
+console.log(b); Grupo R4
+console.log(c); 30
+console.log(loQueQueda); [40,50]
+
+var m = [];
+    m [0] = [1, 2, 3, 4];
+    m [1] = [5, 6, 7, 8];
+    m [2] = [9, 0, 1, 2];
+    m [3] = [3, 4, 5, 6];
+    m [4] = [7, 8, 9, 0];
+    
+    matriz de 5 filas y 4 columnas
+
+    liberia math libreria maiz liberia random
+
