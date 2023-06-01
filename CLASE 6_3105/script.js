@@ -7,6 +7,8 @@ const billAmountSpan = document.getElementById('bill-amount');
 const tipPercentageSpan = document.getElementById('tip-percentage');
 const tipAmountSpan = document.getElementById('tip-amount');
 const totalAmountSpan = document.getElementById('total-amount');
+const numPersonas = document.getElementById('numPersonas');
+const totalPersonasSpan = document.getElementById('personas-amount');
 
 // Escuchar el evento 'submit' del formulario
 form.addEventListener('submit', function(event) {
@@ -15,6 +17,7 @@ form.addEventListener('submit', function(event) {
   // Validar los valores ingresados
   const bill = parseFloat(billInput.value);
   const tipPercentage = parseFloat(tipSelect.value);
+  const cualquiera = parseInt(numPersonas.value);
   
   if (isNaN(bill) || isNaN(tipPercentage) || bill <= 0) {
     alert('Por favor, ingresa valores numéricos válidos para el monto de la cuenta y el porcentaje de propina.');
@@ -24,12 +27,14 @@ form.addEventListener('submit', function(event) {
   // Calcular la propina y el monto total
   const tipAmount = bill * tipPercentage;
   const totalAmount = bill + tipAmount;
+  const totalPersonas = totalAmount/cualquiera;
   
   // Mostrar los resultados
   billAmountSpan.textContent = bill.toFixed(2);
   tipPercentageSpan.textContent = (tipPercentage * 100).toFixed(0) + '%';
   tipAmountSpan.textContent = tipAmount.toFixed(2);
   totalAmountSpan.textContent = totalAmount.toFixed(2);
+  totalPersonasSpan.textContent = totalPersonas;
   
   resultDiv.classList.remove('hidden');
   //Variable de todos los elemento que voy a permitir ver
