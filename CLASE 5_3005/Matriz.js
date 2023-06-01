@@ -19,7 +19,6 @@ console.log(otro);
 
 let otro2 = otro.sort((a,b) => a-b);
 console.log(otro2);
-
 let m0 = otro2.slice(0,4)
 let m1 = otro2.slice(4,8)
 m1.reverse()
@@ -27,6 +26,7 @@ let m2 = otro2.slice(8,12)
 let m3 = otro2.slice(12,16)
 m3.reverse()
 let m4 = otro2.slice(16,20)
+
 console.log(m0, m1, m2, m3, m4);
 
 let general = [m0, m1, m2, m3, m4]

@@ -375,3 +375,44 @@ var m = [];
 
     liberia math libreria maiz liberia random
 
+------------------------------------------------------------
+DOM (Document Objtect Model/Modelo del documento basado en objetos)
+"DOM es un modelo de datos basado en objetos y en estructuras de árboles". Es una representacion de todos los documentos que estan en HTML. Permite acceder al HTML para cambiar estilos y contenidos o agregar/ quitar propiedad (manipularlo)
+
+Como funciona
+"DOM es un árbol y es formado por elementos y atributos.
+Los elementos son etiquetas y los atributos son atributos (propiedades) de los elementos.
+Los elementos tienen atributos y los atributos tienen valores.
+Los atributos tienen nombre y valor"
+- Parte de un documento principal, este tiene dos secciones 
+    1. Head: Etiqueta del head sería "Meta y Title"
+    2. Body: Etiquetas ilimitadas (div, p (estas se pueden identificar a partir del id, class, tag o name))
+Ej:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>El Objeto Documento</h1>
+    <h2>El addEventListener() Method</h2>
+    <p>Clock en cualquier parte del documento para desplegar "Hello World!"</p>
+    <p id="demo">Nada</p>
+
+    <script>
+        document.addEventListener("click",miFuncionClick);
+        document.addEventListener("dblclick",miFuncion);
+        document.addEventListener("copy",miFuncion);
+
+        function miFuncionClick() {
+            document.getElementById("demo").innerHTML = "Usted está intentando hacer Click";
+        }
+        function miFuncion() {
+            document.getElementById("demo").innerHTML = "Usted está intentando hacer copiar";
+        }
+    </script>
+</body>
+</html>
