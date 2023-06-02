@@ -43,8 +43,11 @@
   font-size: 150%;
 }
 
-section {
+.body-stilo {
   margin-top: 10px;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 10%;
+  margin-right: 10%;
+  border: solid rgb(197, 235, 224)
+ ;
+  
 }
