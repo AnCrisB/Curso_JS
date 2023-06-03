@@ -1,0 +1,48 @@
+h1 {
+    font-size: 60px; 
+    border: 1px solid; 
+    color: rgb(87, 125, 134); 
+    background-color:rgb(135, 203, 185);    
+    padding: 50px;
+}
+
+.card{
+    margin-top: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
+    border: solid rgb(87, 125, 134);
+    background-color: rgb(87, 125, 134);
+    border-radius: 10px;
+}
+
+.form-check {
+    margin-top: 20px;
+    margin-left: 7%;
+    margin-right: 70%;
+}
+
+.form-row {
+    font-size: 25px;
+    margin-left: 6%;
+}
+
+.btn-outline-info {
+    margin-top: 20px; 
+    font-size: 22px;
+    color: rgb(201, 221, 215);
+    border-color: rgb(201, 221, 215);
+    background-color: rgb(87, 125, 134);
+}
+
+.btn-outline-info:hover {
+    cursor: pointer;
+    margin-top: 20px; 
+    font-size: 23px;
+    color: rgb(61, 88, 94);
+    border-color: rgb(201, 221, 215);
+    background-color: rgb(201, 221, 215);
+}
+
+.hidden {
+    display: none;
+}

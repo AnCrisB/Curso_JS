@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>directorioEmp</title>
+    <link rel="stylesheet" type="text/css" src="directorioEmp.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</head>
+<style>
+h1 {
+    font-size: 60px; 
+    border: 1px solid; 
+    color: rgb(87, 125, 134); 
+    background-color:rgb(135, 203, 185);    
+    padding: 50px;
+}
+
+.card{
+    margin-top: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
+    border: solid rgb(87, 125, 134);
+    background-color: rgb(87, 125, 134);
+    border-radius: 10px;
+}
+
+.form-check {
+    margin-top: 20px;
+    margin-left: 7%;
+    margin-right: 70%;
+}
+
+.form-row {
+    font-size: 25px;
+    margin-left: 6%;
+}
+
+.btn-outline-info {
+    margin-top: 20px; 
+    font-size: 22px;
+    color: rgb(201, 221, 215);
+    border-color: rgb(201, 221, 215);
+    background-color: rgb(87, 125, 134);
+}
+
+.btn-outline-info:hover {
+    cursor: pointer;
+    margin-top: 20px; 
+    font-size: 23px;
+    color: rgb(61, 88, 94);
+    border-color: rgb(201, 221, 215);
+    background-color: rgb(201, 221, 215);
+}
+
+.hidden {
+    display: none;
+}
+
+</style>
+<body style="text-align: center; background-color: rgb(185, 237, 221)">
+    <h1>Directorio Empresarial</h1>
+    <div id= "card" class="card text-center mb-6" style="width: 40rem;">
+        <div class="card-body">
+        <form style="color:rgb(201, 221, 215)">
+            <div id="div1" class="form-row">
+                <div class="form-group col-md-11" >
+                    <label for="inputNombre4">Nombre</label>
+                    <input type="Nombre" class="form-control" id="inputNombre4" placeholder="Nombre"/>
+                </div>
+                <div class="form-group col-md-11">
+                    <label for="inputCorreo4">Correo</label>
+                    <input type="Correo" class="form-control" id="inputCorreo4" placeholder="Correo"/>
+                </div>
+                <div class="form-group col-md-11">
+                    <label for="inputTelefono4">Teléfono</label>
+                    <input type="Telefono" class="form-control" id="inputTelefono4" placeholder="Teléfono"/>
+                </div>
+            </div>
+            <div class="form-group">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck" />
+                <label class="form-check-label" for="gridCheck">Recordar datos</label>
+            </div>
+            </div>
+            <button id=button type="submit" onclick="agregarElemento()" class="btn btn-outline-info" >Agregar</button>
+        </form>
+        </div>
+    </div> 
+
+    <div id="result" class="hidden">
+        <p>Acá va la tabla de información</p>
+    </div>
+
+<script src="directorioEmp.js"></script>
+</body>
+</html>

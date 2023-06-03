@@ -1,0 +1,51 @@
+.hidden {
+    display: none;
+  }
+
+.title {
+  color: rgb(132, 169, 132);
+  font-family:fantasy;
+  text-align: center;
+  font-size: 100px;
+  background-color: rgba(194, 246, 194, 0.434);
+}
+
+#button {
+  font-family:fantasy; 
+  color: rgb(105, 139, 105);
+  background-color: rgba(172, 231, 205, 0.416);
+  border-color: rgb(82, 169, 140);
+  border-width: 2px;
+}
+
+#bill {
+  font-family:fantasy; 
+  color: rgb(105, 139, 105);
+  background-color: rgba(172, 231, 205, 0.416);
+  border-color: rgb(82, 169, 140);
+  border-width: 2px;
+  border-radius: 7px;
+}
+
+#tip {
+  font-family:fantasy; 
+  color: rgb(105, 139, 105);
+  background-color: rgba(172, 231, 205, 0.416);
+  border-color: rgb(82, 169, 140);
+  border-width: 2px;
+  border-radius: 7px;
+  font-size: 20px;
+}
+
+.label {
+  color: rgb(105, 139, 105);
+  font-family:fantasy;
+  font-size: 150%;
+}
+
+.body-stilo {
+  margin-top: 10px;
+  margin-left: 10%;
+  margin-right: 10%;
+  border: solid rgb(197, 235, 224);
+}
