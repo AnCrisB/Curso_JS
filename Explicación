@@ -416,3 +416,8 @@ Ej:
     </script>
 </body>
 </html>
+
+PROCEDIMIENTO PARA EL DOM
+1. Crear elemento y lo poblamos 
+2. Creamos contenido
+3. Averiguamos el padre y lo añadimos(insertChild/openChild)
