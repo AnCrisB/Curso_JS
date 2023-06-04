@@ -1,15 +1,21 @@
+.hidden {
+    display: none;
+}
+
 h1 {
     font-size: 60px; 
     border: 1px solid; 
     color: rgb(87, 125, 134); 
     background-color:rgb(135, 203, 185);    
-    padding: 50px;
+    padding: 4%;
+    margin-top: 0.4%;
+    margin-left: 0.4%;
+    margin-right: 0.4%;
 }
 
 .card{
-    margin-top: 50px;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-top: 10%;
+    margin: 3% auto;
     border: solid rgb(87, 125, 134);
     background-color: rgb(87, 125, 134);
     border-radius: 10px;
@@ -43,6 +49,3 @@ h1 {
     background-color: rgb(201, 221, 215);
 }
 
-.hidden {
-    display: none;
-}
