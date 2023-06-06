@@ -421,3 +421,34 @@ PROCEDIMIENTO PARA EL DOM
 1. Crear elemento y lo poblamos 
 2. Creamos contenido
 3. Averiguamos el padre y lo añadimos(insertChild/openChild)
+
+
+------------------------------------
+Variables simple: datos unicos (entero, estring, etc)
+Variables estructuradas: conjunto de datos
+- Diccionarios
+        miDiccionario = {"nombre":"Juan",
+                         "edad": 22,
+                         "peso":"75"}
+
+Una estructura análoga en JS es map
+        miMapa = new Map ();
+- Tiene elementos constitutivos por clave/valor a diferencia de Python, agrego/modifico elementos
+        miMapa.set("nombre","Alejandra");
+
+- METODO "GET"
+        persona = miMapa.get("nombre");
+ La persona tendrá el valor de Alejandra. El GET (trae/toma el valor) esta ligado con el SET (plantea valor)
+
+ Map es, al igual que Objet, una colección de datos identificados por claves. La principal diferencia es que Map permite claves de cualquier tipo.
+
+https://es.javascript.info/map-set 
+Los métodos y propiedades son:
+
+new Map() – crea el mapa.
+map.set(clave, valor)) – almacena el valor asociado a la clave.
+map.get(clave) – devuelve el valor de la clave. Será undefined si la clave no existe en map.
+map.has(clave) – devuelve "true" si la clave existe en map, false si no existe.
+map.delete(clave) – elimina el elemento con esa clave.
+map.clear() – elimina todo de map.
+map.size – tamaño, devuelve la cantidad actual de elementos.
