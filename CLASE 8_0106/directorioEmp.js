@@ -1,6 +1,7 @@
 var contador=0
 const boton = document.getElementById('button')
 const resultDiv = document.getElementById('result')
+
 boton.addEventListener('click', function() {
     resultDiv.classList.remove('hidden');
 
