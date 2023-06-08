@@ -1,3 +1,4 @@
+
 Es un lenguaje debilmente tipeado (varias exigencias), convección forzada (convertir un valor numero a srting), se usa sobre browser(pagina web):
 Es un lenguaje interpretado que necesita dos entornos:
 - Navegador parte visual
@@ -439,6 +440,8 @@ Una estructura análoga en JS es map
 - METODO "GET"
         persona = miMapa.get("nombre");
  La persona tendrá el valor de Alejandra. El GET (trae/toma el valor) esta ligado con el SET (plantea valor)
+ El get devuelve el valor relacionado al objeto.
+
 
  Map es, al igual que Objet, una colección de datos identificados por claves. La principal diferencia es que Map permite claves de cualquier tipo.
 
@@ -458,3 +461,6 @@ GUIA DE TRABAJO PARA CREAR UNA PAGINA WEB
 1) Diseño predefinido que tendrá mi sitio web.
 2) Materializar el diseño a través de los elementos que me ofrece Bootstrap.
 3) Modificar o agregar interacción de la página, eventos que se van a disparar cuando ocurra un evento (onClick, Hover, etc) usando Js.
+
+ESTUCTURA TIPO OBJETIO (Similar a MAP o diccionario en Python)
+A los objetos puedo definirle cualquier cantidad de atributos
